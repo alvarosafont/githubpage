@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<title>Contacto - Enciclopedia</title>
+</head>
+<body>
+
+    <main>
+	<img src="../imagenes/logo.jpg" alt="Logo" style="width: 100%; max-width: 300px; height: auto;">
+        <h2>Contáctanos</h2>
+        <form action="../articulos/respuesta_contacto.html" method="POST">
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required><br><br>
+
+            <label for="comentario">Comentario o Pregunta:</label><br>
+            <textarea id="comentario" name="comentario" rows="5" cols="30" placeholder="¿Cómo puedo realizar una buúsqueda?" required></textarea><br><br>
+
+            <label for="yo_soy">Yo soy:</label>
+            <select id="yo_soy" name="yo_soy">
+                <option value="paciente">Paciente</option>
+                <option value="cientifico">Científico</option>
+                <option value="medico">Médico</option>
+                <option value="educador">Educador</option>
+                <option value="fabricante">Fabricante</option>
+                <option value="periodista">Periodista</option>
+            </select><br><br>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br><br>
+
+            <fieldset>
+                <legend>Sexo:</legend>
+                <p><input type="radio" id="hombre" name="sexo" value="hombre" checked>
+                <label for="hombre">Hombre</label></p>
+
+                <p><input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label></p>
+
+                <p><input type="radio" id="otro" name="sexo" value="otro">
+                <label for="otro">Otro</label></p>
+            </fieldset><br>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="jlz4@alu.ua.es" required><br><br>
+
+            <input type="checkbox" id="recibir_info" name="recibir_info">
+            <label for="recibir_info">Deseo recibir más información</label><br><br>
+
+            <input type="submit" value="Enviar"><br><br>
+        </form>
+		<p><a href="../pantallainicio.html" title="Indice">Volver al indice</a></p>
+
+    </main>
+
+   <footer>
+	 
+	   <dl>
+	   <dt>Autores:</dt>
+	   <dd>Javier Lopez</dd>
+	   <dd>Alvaro Safont</dd>
+		</dl>
+		<p>
+		<em>Ingenieria Biomedica</em>
+		<br>
+		<strong>COPYRIGHT 2024</strong>
+		</p>	
+
+    </footer>
+</body>
+</html>
